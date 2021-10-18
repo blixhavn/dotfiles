@@ -18,5 +18,7 @@
 !.setup
 
 !bin
+!Pictures
+Pictures/*
 !Pictures/wallpapers
 
