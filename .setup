@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mkdir -p /home/$USER/bin
+
+echo "Installing Zsh..."
+sudo apt-get install -y zsh
+
+# No need to add to .zshrc, it's already there
+echo "Installing pyenv..."
+curl https://pyenv.run bash
+
+echo "Installing powerline extension..."
+pip install --user git+git://github.com/Lokaltog/powerline
+fc-cache -vf ~/.fonts
+
+echo "Installing wal (for changing color scheme based on wallpaper)..."
+wget https://github.com/dylanaraps/wal/raw/master/wal -o /home/$USER/bin
+chmod +x /home/$USER/bin/wal
