@@ -40,7 +40,7 @@ esac
 
 ETH_INTERFACES="enp0s31f6|enx186571ed38c7"
 
-ETHERNET_CONNECTED=$(ip a | grep -E -o -m 1 "[$ETH_INTERFACES]:.*state UP")
+ETHERNET_CONNECTED=$(ip a | grep -E -o -m 1 "($ETH_INTERFACES):.*state UP")
 if [[ ! -z $ETHERNET_CONNECTED ]]; then
     echo ""
     echo ""
