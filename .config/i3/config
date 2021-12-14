@@ -69,6 +69,8 @@ bindsym $mod+space exec rofi -show drun -p "Launch" -opacity 85 -font "System Sa
 bindsym $mod+shift+space exec rofi -show run -p "Run" -opacity 85 -font "System San Fransisco Display 16" -lines 3
 bindsym $mod+ctrl+c exec rofi -show calc -p "Calc" -opacity 85 -font "System San Fransisco Display 16" -lines 1 
 
+# Reset displays - show main
+bindsym XF86Display exec --no-startup-id xrandr --output eDP-1 --auto
 
 # Snapscreen
 bindsym $mod+Shift+s exec snapscreen
@@ -138,7 +140,7 @@ set $ws2 "2:  "
 set $ws3 "3:  "
 set $ws4 "4:  "
 set $ws5 "5: ♫ "
-set $ws6 "6:  "
+set $ws6 "6:  "
 set $ws7 "7:  "
 set $ws8 "8:  "
 set $ws9 "9:  "
